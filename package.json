@@ -1,0 +1,48 @@
+{
+  "name": "nexus-swarm",
+  "version": "0.1.0",
+  "description": "A swarm-intelligence framework for distributed multi-agent collaboration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "example:basic": "ts-node examples/basic.ts",
+    "example:distributed": "ts-node examples/distributed.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "multi-agent",
+    "swarm-intelligence",
+    "distributed",
+    "llm",
+    "ai-agents",
+    "task-orchestration"
+  ],
+  "author": "LiuYi180",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiuYi180/Nexus.git"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^22.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "packageManager": "npm@11.12.1+sha512.cdca14b85d647b3192028d02aadbe82d75f79a446aceea9874be98e6d768f20ebd3555770a48d0e9906106007877bbc690f715e9372f2e2dc644a3c3157fb14c"
+}
